@@ -20,29 +20,19 @@ export const ThemeProvider = ({ children }) => {
 
   function setColorMode(newValue) {
     const root = window.document.documentElement;
+
     // 1. Update React color-mode state
     rawSetColorMode(newValue);
+
     // 2. Update localStorage
     localStorage.setItem('color-mode', newValue);
+
     // 3. Update each color
-    root.style.setProperty(
-      '--color-text',
-      newValue === 'light'
-        ? COLORS.text.light
-        : COLORS.text.dark
-    );
-    root.style.setProperty(
-      '--color-background',
-      newValue === 'light'
-        ? COLORS.background.light
-        : COLORS.background.dark
-    );
-    root.style.setProperty(
-      '--color-primary',
-      newValue === 'light'
-        ? COLORS.primary.light
-        : COLORS.primary.dark
-    );
+    Object.entries(COLORS).forEach(([name, colorByTheme]) => {
+      const cssVarName = `--color-${name}`;
+      root.style.setProperty(cssVarName, colorByTheme[newValue]);
+    });
+
     root.style.setProperty('--initial-color-mode', colorMode);
 
   }

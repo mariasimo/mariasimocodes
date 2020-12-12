@@ -1,4 +1,9 @@
 module.exports = {
+  siteMetadata: {
+    title: `María Simó`,
+    siteUrl: `https://mariasimo.codes`,
+    description: `Front end developer + UI Designer`,
+  },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
