@@ -7,13 +7,7 @@ module.exports = {
     "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-
-        data: `@import "${__dirname}/src/styles/variables.scss";`,
-      }
-    },
+    `gatsby-plugin-sass`,
     {
       resolve: "gatsby-source-filesystem",
       options: {

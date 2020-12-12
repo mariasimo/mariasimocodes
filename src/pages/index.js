@@ -70,7 +70,6 @@ const links = [
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <Main/>
       <title>Home Page</title>
       <h1 style={headingStyles}>
         Congratulations
@@ -80,6 +79,7 @@ const IndexPage = () => {
           🎉🎉🎉
         </span>
       </h1>
+      <Main/>
       <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
         update in real-time.{" "}
