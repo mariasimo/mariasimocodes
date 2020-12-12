@@ -1,8 +1,8 @@
 import * as React from "react"
+import Main from "../components/main"
 
 // styles
 const pageStyles = {
-  color: "#232129",
   padding: "96px",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
@@ -70,6 +70,7 @@ const links = [
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
+      <Main/>
       <title>Home Page</title>
       <h1 style={headingStyles}>
         Congratulations
