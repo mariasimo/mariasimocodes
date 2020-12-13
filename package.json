@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "format": "prettier \"src/**/*.{js,html}\" --write"
   },
   "license": "0BSD",
   "dependencies": {
@@ -31,5 +32,8 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "terser": "3.14.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
   }
 }
