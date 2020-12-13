@@ -1,0 +1,427 @@
+:root {
+  /* Spacing */
+  --sp-xs: 0.25rem;
+  --sp-s: 0.5rem;
+  --sp-m: 1rem;
+  --sp-l: 1.5rem;
+  --sp-xl: 3rem;
+  --sp-xxl: 6rem;
+
+  /* Font families */
+  --ff-primary: "Helvetica";
+  --ff-secondary: "Georgia";
+
+  /* Font Weight */
+  --fw-thin: 100;
+  --fw-light: 400;
+  --fw-normal: 400;
+  --fw-bold: 600;
+  --fw-extraBold: 900;
+
+  /* Text Sizes */
+  --fs-01: 2.625rem;
+  --fs-02: 2rem;
+  --fs-03: 1.75rem;
+  --fs-04: 1.5rem;
+  --fs-05: 1.375rem;
+  --fs-06: 1.25rem;
+  --fs-07: 1rem;
+  --fs-08: 0.857rem;
+  --fs-09: 0.75rem;
+  --fs-10: 0.625rem;
+
+  /* Line height*/
+  --lh-s: 1;
+  --lh-m: 1.2;
+  --lh-l: 1.4;
+  --lh-xl: 1.6;
+
+  /* MediaQueries */
+  --bp-default: 100%;
+  --bp-xs: 22.5rem;
+  --bp-s: 48rem;
+  --bp-l: 85.375rem;
+  --bp-xl: 96.375rem;
+  --bp-xxl: 105rem;
+
+  /* Container */
+  --container: 100%;
+  --side-margin: 6.25rem;
+}
+
+// Responsive
+@media (min-width: 48rem) {
+  :root {
+    --container: 35.5rem;
+  }
+}
+
+@media (min-width: 85.375rem) {
+  :root {
+    --container: 62.5rem;
+  }
+}
+
+@media (min-width: 96.375rem) {
+  :root {
+    --container: 83.875rem;
+  }
+}
+
+@media (min-width: 105rem) {
+  :root {
+    --container: 92.5;
+  }
+}
+
+//       {
+//         name: "display02",
+//         fontFamily: "primary",
+//         fontSize: "56px",
+//         lineHeight: "120%",
+//         fontWeight: "800",
+//         responsive: [
+//           {
+//             breakpoint: "xl",
+//             fontSize: "96px",
+//           },
+//         ],
+//       },
+//       {
+//         name: "display01",
+//         fontFamily: "primary",
+//         fontSize: "56px",
+//         lineHeight: "120%",
+//         fontWeight: "800",
+//         responsive: [],
+//       },
+//       {
+//         name: "headingxxl",
+//         fontFamily: "primary",
+//         fontSize: "32px",
+//         lineHeight: "135%",
+//         fontWeight: "800",
+//         responsive: [
+//           {
+//             breakpoint: "m",
+//             fontSize: "48px",
+//           },
+//         ],
+//       },
+//       {
+//         name: "headingxl",
+//         fontFamily: "primary",
+//         fontSize: "24px",
+//         lineHeight: "150%",
+//         fontWeight: "800",
+//         responsive: [
+//           {
+//             breakpoint: "m",
+//             fontSize: "35px",
+//           },
+//           {
+//             breakpoint: "xxl",
+//             fontSize: "48px",
+//           },
+//         ],
+//       },
+//       {
+//         name: "headingl",
+//         fontFamily: "primary",
+//         fontSize: "18px",
+//         lineHeight: "24px",
+//         fontWeight: "800",
+//         responsive: [
+//           {
+//             breakpoint: "m",
+//             fontSize: "30px",
+//             lineHeight: "36px",
+//           },
+//           {
+//             breakpoint: "xxl",
+//             fontSize: "36px",
+//             lineHeight: "47px",
+//           },
+//         ],
+//       },
+//       {
+//         name: "headingm",
+//         fontFamily: "primary",
+//         fontSize: "15px",
+//         lineHeight: "24px",
+//         fontWeight: "800",
+//         responsive: [
+//           {
+//             breakpoint: "m",
+//             fontSize: "28px",
+//             lineHeight: "38px",
+//           },
+//           {
+//             breakpoint: "xxl",
+//             fontSize: "30px",
+//             lineHeight: "40px",
+//           },
+//         ],
+//       },
+//       {
+//         name: "headings",
+//         fontFamily: "primary",
+//         fontSize: "14px",
+//         lineHeight: "22px",
+//         fontWeight: "800",
+//         responsive: [
+//           {
+//             breakpoint: "m",
+//             fontSize: "18px",
+//             lineHeight: "24px",
+//           },
+//           {
+//             breakpoint: "xxl",
+//             fontSize: "24px",
+//             lineHeight: "32px",
+//           },
+//         ],
+//       },
+//       {
+//         name: "headingxs",
+//         fontFamily: "primary",
+//         fontSize: "13px",
+//         lineHeight: "21px",
+//         fontWeight: "800",
+//         responsive: [
+//           {
+//             breakpoint: "m",
+//             fontSize: "15px",
+//             lineHeight: "26px",
+//           },
+//           {
+//             breakpoint: "xxl",
+//             fontSize: "18px",
+//             lineHeight: "24px",
+//           },
+//         ],
+//       },
+//       {
+//         name: "bodyLead",
+//         fontFamily: "secondary",
+//         fontSize: "15px",
+//         lineHeight: "120%",
+//         fontWeight: "400",
+//         responsive: [
+//           {
+//             breakpoint: "m",
+//             fontSize: "21px",
+//             lineHeight: "150%",
+//             fontWeight: "400",
+//           },
+//           {
+//             breakpoint: "xxl",
+//             fontSize: "22px",
+//             lineHeight: "35px",
+//           },
+//         ],
+//       },
+//       {
+//         name: "body",
+//         fontSize: "14px",
+//         lineHeight: "22px",
+//         fontWeight: "400",
+//         fontFamily: "secondary",
+//         responsive: [
+//           {
+//             breakpoint: "m",
+//             fontSize: "15px",
+//             lineHeight: "26px",
+//           },
+//           {
+//             breakpoint: "xxl",
+//             fontSize: "17px",
+//             lineHeight: "28px",
+//           },
+//         ],
+//       },
+//       {
+//         name: "bodyInline",
+//         fontSize: "13px",
+//         lineHeight: "24px",
+//         fontFamily: "secondary",
+//         fontWeight: "400",
+//         responsive: [
+//           {
+//             breakpoint: "m",
+//             fontSize: "13px",
+//             lineHeight: "24px",
+//           },
+//           {
+//             breakpoint: "xxl",
+//             fontSize: "15px",
+//             lineHeight: "24px",
+//           },
+//         ],
+//       },
+//       {
+//         name: "subtitle01",
+//         fontFamily: "secondary",
+//         fontSize: "16px",
+//         lineHeight: "24px",
+//         fontWeight: "400",
+//         textAlign: "center",
+//         fontStyle: "italic",
+//         responsive: [
+//           {
+//             breakpoint: "m",
+//             fontSize: "18px",
+//             lineHeight: "30px",
+//           },
+//           {
+//             breakpoint: "xxl",
+//             fontSize: "22px",
+//             lineHeight: "36px",
+//           },
+//         ],
+//       },
+//       {
+//         name: "subtitle02",
+//         fontFamily: "secondary",
+//         fontSize: "14px",
+//         lineHeight: "22px",
+//         fontWeight: "400",
+//         fontStyle: "italic",
+//         responsive: [
+//           {
+//             breakpoint: "m",
+//             fontSize: "15px",
+//             lineHeight: "26px",
+//           },
+//           {
+//             breakpoint: "xxl",
+//             fontSize: "18px",
+//             lineHeight: "28px",
+//           },
+//         ],
+//       },
+//       {
+//         name: "subtitle03",
+//         fontSize: "12px",
+//         lineHeight: "20px",
+//         fontWeight: "400",
+//         fontStyle: "italic",
+//         fontFamily: "secondary",
+//         responsive: [
+//           {
+//             breakpoint: "m",
+//             fontSize: "13px",
+//             lineHeight: "20px",
+//           },
+//           {
+//             breakpoint: "xxl",
+//             fontSize: "14px",
+//             lineHeight: "24px",
+//           },
+//         ],
+//       },
+//       {
+//         name: "button",
+//         fontSize: "12px",
+//         lineHeight: "25px",
+//         fontWeight: "800",
+//         fontFamily: "primary",
+//         responsive: [
+//           {
+//             breakpoint: "m",
+//             fontSize: "13px",
+//             lineHeight: "20px",
+//           },
+//         ],
+//       },
+//       {
+//         name: "tiny",
+//         fontSize: "11px",
+//         lineHeight: "20px",
+//         fontWeight: "400",
+//         fontFamily: "secondary",
+//       },
+//     ],
+//   },
+
+//   gradient: {
+//     description: "",
+//     gradients: {
+//       spectrum: {
+//         direction: "60deg",
+//         stops: [
+//           {
+//             color: "#ff0000",
+//             opacity: 1.0,
+//             position: "0%",
+//           },
+//           {
+//             color: "#ff00ff",
+//             opacity: 1.0,
+//             position: "15%",
+//           },
+//           {
+//             color: "#0000ff",
+//             opacity: 1.0,
+//             position: "33%",
+//           },
+//           {
+//             color: "#00ffff",
+//             opacity: 1.0,
+//             position: "49%",
+//           },
+//           {
+//             color: "#00ff00",
+//             opacity: 1.0,
+//             position: "67%",
+//           },
+//           {
+//             color: "#ffff00",
+//             opacity: 1.0,
+//             position: "84%",
+//           },
+//           {
+//             color: "#0000ff",
+//             opacity: 1.0,
+//             position: "100%",
+//           },
+//         ],
+//       },
+
+//       gradient01: {
+//         direction: "to top",
+//         stops: [
+//           {
+//             color: "#443CF3",
+//             opacity: 1.0,
+//             position: "0%",
+//           },
+//           {
+//             color: "#425FF7",
+//             opacity: 1.0,
+//             position: "100%",
+//           },
+//         ],
+//       },
+//     },
+//   },
+
+//   shadow: {
+//     description: "",
+//     shadows: {
+//       small: {
+//         x: 0,
+//         y: 2,
+//         blur: 2,
+//         color: "#000000",
+//         opacity: 0.5,
+//       },
+//       big: {
+//         x: 0,
+//         y: 25,
+//         blur: 96,
+//         color: "#000000",
+//         opacity: 0.9,
+//       },
+//     },
+//   },

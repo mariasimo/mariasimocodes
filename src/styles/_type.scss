@@ -1,0 +1,77 @@
+@import "variables";
+
+// Titles
+
+@mixin title01 {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-extraBold);
+  font-size: var(--fs-01);
+  line-height: var(--lh-m);
+  text-transform: uppercase;
+}
+@mixin title02 {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-extraBold);
+  font-size: var(--fs-04);
+  line-height: var(--lh-m);
+  text-transform: uppercase;
+}
+@mixin title03 {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-05);
+  line-height: var(--lh-m);
+}
+@mixin title04 {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-07);
+  line-height: var(--lh-m);
+}
+@mixin title05 {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-08);
+  line-height: var(--lh-m);
+}
+@mixin title06 {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-09);
+  line-height: var(--lh-m);
+}
+
+// Alt Titles
+
+@mixin title01Alt {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-01);
+  line-height: var(--lh-m);
+  text-transform: uppercase;
+}
+@mixin title02Alt {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-02);
+  line-height: var(--lh-m);
+  text-transform: uppercase;
+}
+@mixin title03Alt {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-03);
+  line-height: var(--lh-m);
+}
+@mixin title04Alt {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-05);
+  line-height: var(--lh-m);
+  text-transform: uppercase;
+}
+
+// Paragraph
+@mixin bodyLarge {
+  font-family: var(--ff-primary);
+  font-size: var(--ff-06);
+  line-height: var(--lh-xl);
+}

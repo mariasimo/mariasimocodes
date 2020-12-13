@@ -1,12 +1,14 @@
-
 @import "variables";
 @import "mixins";
 
 body {
-    font-family: Helvetica;
-    line-height: 1.5;
-    min-height: 100%;
-    -webkit-font-smoothing: antialiased;
-    background-color: var(--color-background);
-    color: var(--color-text)
+  font-size: 16px;
+  font-family: var(--ff-primary);
+  line-height: var(--lh-l);
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-weight: var(--ff-normal);
+  letter-spacing: 0;
 }

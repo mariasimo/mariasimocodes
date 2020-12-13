@@ -1,12 +1,12 @@
-import React from 'react'
-import DarkToggle from './DarkToggle'
-import style from './main.module.scss'
+import React from "react";
+import DarkToggle from "./DarkToggle";
+import style from "./main.module.scss";
 
 const Main = () => (
-    <>
+  <>
     <div className={style.title}>Holi?</div>
-    <DarkToggle/>
-    </>
-)
+    <DarkToggle />
+  </>
+);
 
-export default Main
+export default Main;

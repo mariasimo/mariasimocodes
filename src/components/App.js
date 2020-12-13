@@ -1,12 +1,10 @@
-import React from 'react';
-import { ThemeProvider } from '../theme/ThemeContext';
+import React from "react";
+import { ThemeProvider } from "../theme/ThemeContext";
 
 function App({ children }) {
   return (
     <ThemeProvider>
-        <div>
-        {children}
-        </div>
+      <div>{children}</div>
     </ThemeProvider>
   );
 }

@@ -1,0 +1,16 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--container);
+
+  ul {
+    display: flex;
+
+    li {
+      margin-right: var(--sp-s);
+      padding: 0;
+      list-style: none;
+    }
+  }
+}

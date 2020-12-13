@@ -12,7 +12,12 @@ module.exports = {
     "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    `gatsby-plugin-sass`,
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        data: `@import "${__dirname}/src/styles/global";`,
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -30,4 +35,4 @@ module.exports = {
       __key: "pages",
     },
   ],
-};
+}
